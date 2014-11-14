@@ -1,0 +1,162 @@
+
+
+<!-- MAILBOX BEGIN -->
+<div class="box-header"><span class="title">mailbox ...</span></div>
+
+
+<div class="mail-content">
+
+    <div class="search-bar">
+        <div class="search-box">
+            <span>search:</span>
+            <input class="filter-style" type="text" ng-model="mail"/>
+        </div>
+    </div>
+
+    <div class="folders">
+        <div class="folder">Inbox</div>
+        <div class="folder">Draft</div>
+        <div class="folder">Sent</div>
+        <div class="folder">Starred</div>
+        <div class="folder">Junk</div>
+        <div class="compose-btn btn">new email</div>
+    </div>
+
+    <div class="mails">
+
+
+
+        <div class="mail-line" ng-repeat="x in mails | filter:mail">
+            <div class="mail-check mail-inline"><!--<input type="checkbox"/>--><i class="fa fa-check-square"></i></div>
+            <div class="mail-star mail-inline"><i class="fa fa-star"></i></div>
+            <div class="mail-sender mail-inline"><!--<i class="fa fa-user"></i>--> {{x.name}}</div>
+            <div class="mail-subject mail-inline">{{x.subject}}</div>
+            <div class="mail-date mail-inline"><i class="fa fa-calendar"></i> 10/05/2015</div>
+            <div class="mail-time mail-inline"><i class="fa fa-clock-o"></i> {{x.time}}</div>
+        </div>
+
+    </div>
+
+    <!--THIS AREA NEEDS TO BE FIXED-->
+    <div class="compose-mail">
+
+        <!--<form action="#" method="post">
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">TO:</span>
+                        <input name="email_to" type="email" class="form-control" placeholder="Email TO">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">CC:</span>
+                        <input name="email_to" type="email" class="form-control" placeholder="Email CC">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">BCC:</span>
+                        <input name="email_to" type="email" class="form-control" placeholder="Email BCC">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="email_message" class="form-control" placeholder="Message" style="height: 120px;"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="btn btn-success btn-file">
+                        <i class="fa fa-paperclip"></i> Attachment
+                        <input type="file" name="attachment"/>
+                    </div>
+                    <p class="help-block">Max. 32MB</p>
+                </div>
+
+            </div>
+
+            <div class="modal-footer clearfix">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Discard</button>
+                <button type="submit" class="btn btn-primary pull-left"><i class="fa fa-envelope"></i> Send Message</button>
+            </div>
+
+            <div class="pull-right">
+                <small>Showing 1-12/1,240</small>
+                <button class="btn btn-xs btn-primary"><i class="fa fa-caret-left"></i></button>
+                <button class="btn btn-xs btn-primary"><i class="fa fa-caret-right"></i></button>
+            </div>
+
+        </form>-->
+    </div>
+
+
+
+
+</div>
+
+
+
+<!--
+&lt;!&ndash; compose message btn &ndash;&gt;
+<a class="btn btn-block btn-primary" data-toggle="modal" data-target="#compose-modal"><i class="fa fa-pencil"></i> Compose Message</a>
+-->
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap WYSIHTML5 -->
+<!--<script src="../jsplugins//bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>-->
+<!-- iCheck -->
+<!--<script src="../jsplugins//iCheck/icheck.min.js" type="text/javascript"></script>-->
+<!-- Page script -->
+<script type="text/javascript">
+    $(function() {
+
+        "use strict";
+
+
+
+
+        //iCheck for checkbox and radio inputs
+        $('input[type="checkbox"]').iCheck({
+            checkboxClass: 'icheckbox_minimal-blue',
+            radioClass: 'iradio_minimal-blue'
+        });
+
+        //When unchecking the checkbox
+        $("#check-all").on('ifUnchecked', function(event) {
+            //Uncheck all checkboxes
+            $("input[type='checkbox']", ".table-mailbox").iCheck("uncheck");
+        });
+        //When checking the checkbox
+        $("#check-all").on('ifChecked', function(event) {
+            //Check all checkboxes
+            $("input[type='checkbox']", ".table-mailbox").iCheck("check");
+        });
+        //Handle starring for glyphicon and font awesome
+        $(".fa-star, .fa-star-o, .glyphicon-star, .glyphicon-star-empty").click(function(e) {
+            e.preventDefault();
+            //detect type
+            var glyph = $(this).hasClass("glyphicon");
+            var fa = $(this).hasClass("fa");
+
+            //Switch states
+            if (glyph) {
+                $(this).toggleClass("glyphicon-star");
+                $(this).toggleClass("glyphicon-star-empty");
+            }
+
+            if (fa) {
+                $(this).toggleClass("fa-star");
+                $(this).toggleClass("fa-star-o");
+            }
+        });
+
+        //Initialize WYSIHTML5 - text editor
+        /*$("#email_message").wysihtml5();*/
+    });
+</script>
+

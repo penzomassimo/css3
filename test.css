@@ -1,0 +1,854 @@
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #000000; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: #666666; /* Gecko Browsers */
+}
+
+a {
+    outline: 0; /*removes the dotted box around the links*/
+}
+
+body {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    /*size*/
+    height: 600px;
+    width: 100%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed white;*/
+    padding: 0px 0px 0px 0px;
+
+    /*background-image: url("back.jpg");*/
+    background-color: #FFD454;
+    font-family: 'Titillium Web', sans-serif;
+    color: #000000;
+
+}
+
+.header {
+
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 100%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border-bottom: 1px dashed #000000;*/
+    /*border: 1px solid white;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: #FF7D65;*/
+
+
+}
+
+.logo {
+
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 20px;
+    float: left;
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: auto;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dotted white;*/
+    padding: 0px 0px 0px 0px;
+
+
+    /*decorations*/
+    font-size: 3em;
+    /*text-shadow: 1px 1px #A6ACA2;*/
+}
+
+#by {
+    font-size: 0.6em;
+}
+
+.navigation {
+
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: right;
+
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: auto;
+
+    /*box model*/
+    margin: 15px 300px 0px 0px;
+    /*border: 1px dotted white;*/
+    padding: 0px 0px 0px 0px;
+
+
+    /*decorations*/
+
+
+
+}
+
+.content {
+
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 100%;
+
+    /*box model*/
+    margin: 2px 0px 0px 0px;
+    /*border-bottom: 1px dashed white;*/
+    /*border: 1px solid white;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: crimson;*/
+
+
+}
+
+#box1 {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 11%;
+
+    /*box model*/
+    margin: 0px 0px 0px 10px;
+    /*border: 1px dashed #888888;*/
+    /*border: 1px solid white;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    text-align: left;
+
+
+}
+
+
+.dark {
+    font-weight: bolder;
+    margin-right: 20px;
+}
+
+#box2 {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: right;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 85%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed #888888;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    text-align: left;
+
+}
+
+.menu-item {
+    margin: 5px 0px 5px 0px;
+    font-size: 1.2em;
+    border-bottom: 1px dashed #000000;
+}
+
+.menu-item a {
+
+    text-decoration: none;
+
+}
+
+.menu-item a:link {
+    color: #000000;
+}
+
+.menu-item a:hover {
+
+    text-decoration: underline;
+}
+
+.menu-item a:visited {
+    color: #000000;
+}
+
+.menu-item a:active {
+    color: #999770;
+}
+
+.nav-item {
+    display: inline;
+    margin: 0px 10px 0px 0px;
+
+}
+
+.footer {
+    margin: 2px 0px 0px 0px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.chart {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 40%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed white;*/
+
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+}
+
+.chart2 {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 40%;
+
+    /*box model*/
+    margin: 0px 0px 0px 50px;
+    /*border: 1px dashed white;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+}
+
+
+#googleMap {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 400px;
+    width: 40%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed white;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+}
+
+.initial {
+    font-size: 3em;
+    font-family: 'Monoton', cursive;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.box-header {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 100%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed white;*/
+    /*border-bottom: 1px dotted #000000;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.mail-content {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 100%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed #000000;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+
+}
+
+.folders {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 15%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed #000000;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+
+}
+
+.mails {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 80%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed #000000;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+
+}
+
+.folder {
+    font-size: 1.2em;
+    text-align: left;
+    /*border: 1px dashed #000000;*/
+}
+
+.mail-inline {
+    display: inline;
+}
+
+.mail-line {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 100%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed #000000;*/
+    border-bottom: 1px dotted #000000;
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+
+}
+
+.mail-check {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    /*display: block;*/ /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 3%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+   /* border: 1px dashed #000000;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+
+}
+
+.mail-star {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    /*display: block;*/ /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 5%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed #000000;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+
+}
+
+.mail-sender {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    /*display: block;*/ /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 20%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed #000000;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+
+}
+
+.mail-subject {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    /*display: block;*/ /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 20%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed #000000;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+
+}
+
+.mail-date {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    /*display: block;*/ /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 20%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+   /* border: 1px dashed #000000;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+
+}
+
+.mail-time {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    /*display: block;*/ /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 20%;
+
+    /*box model*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed #000000;*/
+    padding: 0px 0px 0px 0px;
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+
+}
+
+/*CHECKBOXES CUSTOMIZATION*/
+/*WE HIDE ALL THE DEFAULT CHECKBOXES SO WE CAN STYLE THEM A LITTLE DIFFERENT*/
+/*
+input[type=checkbox] {
+    visibility: hidden;
+}
+*/
+
+.compose-mail {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 20px 0px 0px 0px;
+    /*border: 1px dashed #000000;*/
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    /*text-align: left;*/
+}
+
+.btn {
+    background-color: #000000;
+    /*background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #666666;
+    -moz-box-shadow: 0px 3px 0px #666666;
+    /*box-shadow: 0px 3px 0px #666666;*/
+    /*font-family: Arial;*/
+    color: #FFFFFF;
+    /*font-size: 20px;*/
+    /*background: #3498db;*/
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #666666;
+    /*background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);*/
+    text-decoration: none;
+    /*box-shadow: 0px 3px 0px #000000;*/
+}
+
+.compose-btn {
+
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 70%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 20px 0px 10px 0px;
+    /*border: 1px dashed #000000;*/
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    text-align: center;
+
+
+}
+
+.search-bar {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 20px 0px;
+    /*border: 1px dashed #000000;*/
+
+    /*decorations*/
+    /*background-color: antiquewhite;*/
+    text-align: center;
+
+}
+
+.search-box {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: right;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 30%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    /*border: 1px dashed #000000;*/
+
+    /*decorations*/
+    text-align: left;
+
+}
+
+.filter-style {
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    height: 30px;
+
+
+
+}
+
+.sub-item {
+    text-align: left;
+    margin: 0px 0px 0px 50px;
+    border: none;
+    display: none;
+
+}
