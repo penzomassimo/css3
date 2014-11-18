@@ -5,6 +5,8 @@ myApp.controller('controller_two', function ($scope, myService, $rootScope) {
 
     $scope.name = myService.casa;
 
+    $scope.data = myService.loadData();
+
     $rootScope.dog = "perro";
 
 
