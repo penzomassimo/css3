@@ -33,6 +33,11 @@ myApp.config(['$routeProvider', function($routeProvider){
             controller: 'ajax_controller',
             templateUrl: 'views/ajaxview.html'
         })
+        .when('/tasks',
+        {
+            controller: 'tasks_controller',
+            templateUrl: 'views/tasks.html'
+        })
 
         .otherwise({redirectTo: '/view1'});
 

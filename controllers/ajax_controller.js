@@ -19,6 +19,8 @@ myApp.controller('ajax_controller', function ($scope, myService, $rootScope) {
 
     );
 
+    $rootScope.test = "HELLO";
+
 
 
 });

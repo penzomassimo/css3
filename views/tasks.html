@@ -1,0 +1,36 @@
+
+<div class="tasks-header"><span class="title">tasks</span></div>
+
+<div class="tasks-content">
+
+
+    <div class="tasks-form">
+        <div class="form-title">Add New Tasks</div>
+        <form>
+            <input class="filter-style" ng-model="toDoTitle" type="text" placeholder="add a new task"/>
+            <input ng-click="addToDo()" type="button" value="add"/>
+        </form>
+    </div>
+
+
+
+    <div class="tasks-container" >
+
+        <div class="task" ng-repeat="x in toDos">
+
+           <div>{{x.todo_title}}</div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+</div>
+
+
+

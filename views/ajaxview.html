@@ -1,12 +1,13 @@
 
-<h1>test, working w/ ajax_controller</h1>
+<h3>test, working w/ ajax_controller</h3>
 
-<div ng-repeat="d in max">
+        <div>{{test}}</div> <!--this is a property attached to the $rootScope object-->
+
+<div ng-repeat="d in max"> <!--AJAX DATA-->
     <div>{{d}}</div>
 </div>
 
-<div ng-repeat="c in data">
-
+<div ng-repeat="c in data"> <!--LITERAL DATA-->
     <p>{{c}}</p>
 </div>
 
