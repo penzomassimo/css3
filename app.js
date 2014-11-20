@@ -30,7 +30,7 @@ myApp.config(['$routeProvider', function($routeProvider){
         })
         .when('/ajaxview',
         {
-            controller: 'controller_two',
+            controller: 'ajax_controller',
             templateUrl: 'views/ajaxview.html'
         })
 

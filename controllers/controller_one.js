@@ -7,6 +7,8 @@ myApp.controller('controller_one', function ($scope) {
     $scope.customers = {name:"todoText", city:"false"};
 
 
+
+
 });
 
 
