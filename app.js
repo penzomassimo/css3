@@ -38,6 +38,12 @@ myApp.config(['$routeProvider', function($routeProvider){
             controller: 'tasks_controller',
             templateUrl: 'views/tasks.html'
         })
+        .when('/weather',
+        {
+            controller: 'weather_controller',
+            templateUrl: 'views/weather.html'
+        })
+
 
         .otherwise({redirectTo: '/view1'});
 

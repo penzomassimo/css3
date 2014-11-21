@@ -993,3 +993,34 @@ input[type=checkbox] {
 
 
 }
+
+.weather-container {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 700px;
+    width: 90%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+
+}
+
+

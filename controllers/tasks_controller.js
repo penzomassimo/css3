@@ -6,7 +6,7 @@ myApp.controller('tasks_controller', function ($scope, $rootScope) {
     $scope.toDos = [
 
         {"todo_title": "Buy Milk"},
-        {"todo_title": "Pick up mom"}
+        {"todo_title": "Pick up bread"}
 
     ];
 
@@ -17,16 +17,12 @@ myApp.controller('tasks_controller', function ($scope, $rootScope) {
         $scope.toDos.push({todo_title:$scope.toDoTitle});
         $scope.toDoTitle = '';
 
-        /*alert("Hello! I am an alert box!");*/
-
     }
 
 
     $scope.removeToDo = function(){
 
-        $scope.toDos.pop();
-
-
+        delete $scope.toDos[1];
 
     }
 
@@ -35,6 +31,7 @@ myApp.controller('tasks_controller', function ($scope, $rootScope) {
     $scope.remaining = function(){
 
         alert("Hello! I am an alert box!");
+
     }
 
 

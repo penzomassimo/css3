@@ -4,7 +4,7 @@
 
 myApp.controller('controller_charts', function ($scope) {
 
-    $scope.items = {name:"todoText", city:"false"};
+    $scope.items = {name:"todoText", city:"new york"};
 
 
 });
