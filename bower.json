@@ -18,6 +18,8 @@
     "animate.css": "daneden/animate.css#~3.2.0",
     "d3": "~3.4.13",
     "Waves": "fians/Waves#~0.5.4",
-    "toastr": "~2.1.0"
+    "toastr": "~2.1.0",
+    "Chart.js": "nnnick/Chart.js#~0.2.0",
+    "tc-angular-chartjs": "~1.0.9"
   }
 }

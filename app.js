@@ -1,4 +1,4 @@
-var myApp = angular.module('myAppModule', ['ngRoute']);
+var myApp = angular.module('myAppModule', ['ngRoute','tc.chartjs']);
 
 myApp.config(['$routeProvider', function($routeProvider){
 

@@ -1,26 +1,18 @@
 
 
 <h1>charts</h1>
-        <h3>{{items.city}}</h3>
+<h3>{{items.city}}</h3>
+
+<div style="height: 500px; width: 500px; float: left">
+
+    <canvas tc-chartjs-line chart-options="options" chart-data="data" auto-legend></canvas>
+
+</div>
+
+<div style="height: 900px; width: 900px; float: right">
+
+    <canvas tc-chartjs-polararea chart-options="options3" chart-data="data3" auto-legend></canvas>
+
+</div>
 
 
-<!--
-<script type="text/javascript">
-    var svg = d3.select('svg');
-
-    var dataSet = [10, 20, 30, 40];
-
-    var circle = svg.selectAll('circle')
-            .data(dataSet)
-            .enter()
-            .append('circle')
-            .attr({
-                r:function(d){ return d },
-                cx:function(d, i){ return i * 100 + 50 },
-                cy:50,
-                fill: 'red'
-            });
-
-</script>
-
--->
