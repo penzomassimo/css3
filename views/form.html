@@ -1,0 +1,25 @@
+<div class="box-header"><span class="title">forms ...</span></div>
+
+
+<div class="form-container">
+
+
+
+
+
+    <form>
+        <div><input class="filter-style" type="text" ng-model="myForm.id" placeholder="id"/></div>
+        <div><input class="filter-style" type="text" ng-model="myForm.firstname" placeholder="firstname"/></div>
+        <div><input class="filter-style" type="text" ng-model="myForm.lastname" placeholder="lastname"/></div>
+
+        <h1>{{myForm.id}} - {{myForm.firstname}} - {{myForm.lastname}}</h1>
+
+        <div  ng-click="sendForm()">submit</div>
+
+        <!--<button type="submit" ng-click="sendForm()">test</button>-->
+    </form>
+
+
+
+</div>
+

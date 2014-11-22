@@ -228,7 +228,7 @@ body {
     margin: 5px 0px 5px 0px;
 
     font-size: 1.2em;
-    border-bottom: 1px dashed #000000;
+    border-bottom: 1px dashed #FF0000;
 }
 
 .menu-item a {
@@ -350,7 +350,7 @@ body {
 }
 
 .initial {
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Monoton', cursive;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -1008,7 +1008,7 @@ input[type=checkbox] {
     display: block; /*default display for div tags*/
 
     /*size*/
-    height: 700px;
+    height: 1000px;
     width: 90%;
 
     /*box model*/
@@ -1023,4 +1023,480 @@ input[type=checkbox] {
 
 }
 
+.form-container {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
 
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 700px;
+    width: 90%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.weather-card {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 700px;
+    width: 50%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+
+}
+
+.weather-city {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    font-size: 2em;
+
+}
+
+.weather-date {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.weather-overcast {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: auto;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.weather-data {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 150px;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.data-left {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 100%;
+    width: 50%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.data-right {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 100%;
+    width: 50%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.weather-graph {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 150px;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.weather-forecast {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 150px;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.forecast-day {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 100%;
+    width: 20%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.precipitation {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 25%;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.humidity {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 25%;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.wind {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 25%;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.weather-icon {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 100%;
+    width: 40%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.temperature {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 100%;
+    width: 40%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    text-align: center;
+
+
+}
+
+.degrees {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 100%;
+    width: 20%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}

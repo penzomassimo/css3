@@ -1,7 +1,54 @@
 <div class="weather-container">
+    <div class="box-header"><span class="title">weather ...</span></div>
+
+    <div class="weather-card">
+
+        <div class="weather-city">{{max.city.name}}, {{max.city.country}}</div>
+        <div class="weather-date">{{today}}</div>
+        <div class="weather-overcast">{{max.list[0].weather[0].description}}</div>
+        <div class="weather-data">
+            <div class="data-left">
+
+                <div class="weather-icon"></div>
+                <div class="temperature">{{max.list[0].main.temp}}</div>
+                <div class="degrees"></div>
+
+
+
+
+            </div>
+            <div class="data-right">
+                <div class="precipitation">Precipitation:</div>
+                <div class="humidity">Humidity: {{max.list[0].main.humidity}}</div>
+                <div class="wind">Wind: {{max.list[0].wind.speed}}</div>
+            </div>
+        </div>
+        <div class="weather-graph">
+            <canvas tc-chartjs-line chart-options="options" chart-data="data2"></canvas>
+        </div>
+        <div class="weather-forecast">
+            <div class="forecast-day">DAY_1</div>
+            <div class="forecast-day">DAY_2</div>
+            <div class="forecast-day">DAY_3</div>
+            <div class="forecast-day">DAY_4</div>
+            <div class="forecast-day">DAY_5</div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
     <div>{{max.city.coord.lon}}</div>
-    <div>{{max.city.name}}</div>
-    <div>{{max.list[0].weather[0].description}}</div>
+    <div></div>
+    <div></div>
 
 
 </div>

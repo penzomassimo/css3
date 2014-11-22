@@ -1,3 +1,4 @@
+
 var myApp = angular.module('myAppModule', ['ngRoute','tc.chartjs']);
 
 myApp.config(['$routeProvider', function($routeProvider){
@@ -42,6 +43,11 @@ myApp.config(['$routeProvider', function($routeProvider){
         {
             controller: 'weather_controller',
             templateUrl: 'views/weather.html'
+        })
+        .when('/form',
+        {
+            controller: 'form_controller',
+            templateUrl: 'views/form.html'
         })
 
 

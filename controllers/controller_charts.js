@@ -1,6 +1,3 @@
-/**
- * Created by massimo on 11/3/14.
- */
 
 myApp.controller('controller_charts', function ($scope) {
 
@@ -112,10 +109,6 @@ myApp.controller('controller_charts', function ($scope) {
         //String - A legend template
         legendTemplate : '<ul class="tc-chart-js-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].strokeColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>'
     };
-
-
-
-
 
     // Chart.js Data
     $scope.data3 = [
