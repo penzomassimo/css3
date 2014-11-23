@@ -215,7 +215,7 @@ body {
 
     /*box model*/
     margin: 0px 0px 0px 0px;
-    /*border: 1px dashed #888888;*/
+    border: 1px dotted #000000;
     padding: 0px 0px 0px 0px;
 
     /*decorations*/
@@ -1009,7 +1009,7 @@ input[type=checkbox] {
 
     /*size*/
     height: 1000px;
-    width: 90%;
+    width: 95%;
 
     /*box model*/
     padding: 0px 0px 0px 0px;
@@ -1071,7 +1071,10 @@ input[type=checkbox] {
     /*box model*/
     padding: 0px 0px 0px 0px;
     /*border-bottom: 1px dotted #000000;*/
-    margin: 0px 0px 0px 0px;
+    margin-left: 25%;
+
+
+
     border: 1px dotted #000000;
 
     /*decorations*/
@@ -1250,7 +1253,7 @@ input[type=checkbox] {
 
 .weather-graph {
     /*positioning*/
-    position: relative;
+    /*position: relative;*/
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -1469,6 +1472,7 @@ input[type=checkbox] {
 
     /*decorations*/
     text-align: center;
+    font-size: 2.5em;
 
 
 }
@@ -1499,4 +1503,227 @@ input[type=checkbox] {
     /*decorations*/
     /*text-align: left;*/
 
+}
+
+.balance-data {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 600px;
+    width: 50%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 20px;
+
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.balance-right {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 100%;
+    width: 48%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.balance-left {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: right;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 100%;
+    width: 48%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.non-current-assets {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 35%;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+
+}
+
+.current-assets {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 60%;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+
+}
+
+.equity {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 30%;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+}
+
+.non-current-liabilities {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 30%;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
+}
+
+.current-liabilities {
+    /*positioning*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden; /*used to avoid the disapperance of the container*/
+
+    /*display*/
+    display: block; /*default display for div tags*/
+
+    /*size*/
+    height: 30%;
+    width: 100%;
+
+    /*box model*/
+    padding: 0px 0px 0px 0px;
+    /*border-bottom: 1px dotted #000000;*/
+    margin: 0px 0px 0px 0px;
+    border: 1px dotted #000000;
+
+    /*decorations*/
+    /*text-align: left;*/
 }

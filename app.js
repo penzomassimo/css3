@@ -49,6 +49,11 @@ myApp.config(['$routeProvider', function($routeProvider){
             controller: 'form_controller',
             templateUrl: 'views/form.html'
         })
+        .when('/balance',
+        {
+            controller: 'balance_controller',
+            templateUrl: 'views/balance.html'
+        })
 
 
         .otherwise({redirectTo: '/view1'});
