@@ -1,0 +1,32 @@
+<div class="box-header"><span class="title">shopping cart ...</span></div>
+
+<div class="shopping-content">
+
+    <div class="categories"></div>
+    <div class="list-products">
+
+        <div class="product-line" ng-repeat="p in products">
+
+            <div class="product-photo">{{p.name}}</div>
+            <div class="product-description">{{p.description}}</div>
+            <div class="product-price">{{p.price}}</div>
+            <div class="product-quantity">{{p.sku}}</div>
+            <div class="product-add">[<a href ng-click="addProductToCart($index)">add</a>]
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="cart-summary">
+        <div class="cart-title"></div>
+        <div class="cart-products">
+            <div class="cart-product-line" ng-repeat="x in cart">{{x.name}} - {{x.description}} - [<a href ng-click="removeProductFromCart($index)">X</a>]</div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
