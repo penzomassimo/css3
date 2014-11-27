@@ -1,5 +1,5 @@
 
-var myApp = angular.module('myAppModule', ['ngRoute','tc.chartjs']);
+var myApp = angular.module('myAppModule', ['ngRoute', 'ngAnimate', 'tc.chartjs']);
 
 myApp.config(['$routeProvider', function($routeProvider){
 
@@ -58,6 +58,11 @@ myApp.config(['$routeProvider', function($routeProvider){
         {
             controller: 'cart_controller',
             templateUrl: 'views/cart.html'
+        })
+        .when('/svg',
+        {
+            controller: 'svg_controller',
+            templateUrl: 'views/svgview.html'
         })
 
 

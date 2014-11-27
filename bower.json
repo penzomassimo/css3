@@ -20,6 +20,7 @@
     "Waves": "fians/Waves#~0.5.4",
     "toastr": "~2.1.0",
     "Chart.js": "nnnick/Chart.js#~0.2.0",
-    "tc-angular-chartjs": "~1.0.9"
+    "tc-angular-chartjs": "~1.0.9",
+    "Snap.svg": "adobe-webplatform/Snap.svg#~0.3.0"
   }
 }
