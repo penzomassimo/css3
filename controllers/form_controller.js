@@ -11,6 +11,7 @@ myApp.controller('form_controller', function ($scope, $http, $q) {
 
         var datax = $scope.myForm;
 
+
         $http.post(url, datax).success(function(data){
 
                 deferred.resolve(data);
