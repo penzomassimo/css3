@@ -7,20 +7,12 @@ myApp.controller('weather_controller', function ($scope, myWeather, $rootScope) 
     var mm = today.getMonth()+1; //January is 0!
     var yyyy = today.getFullYear();*/
 
-
-
     $scope.today = today;
-
-
-
-
-
-
-
 
 
     /*AJAX CALL TO WEATHER SERVICE*/
     var promise = myWeather.load();
+
 
     promise.then(function(data){
 
@@ -120,6 +112,7 @@ myApp.controller('weather_controller', function ($scope, myWeather, $rootScope) 
         legendTemplate : '<ul class="tc-chart-js-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].strokeColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>'
     };
 
+    window.scope = $scope //this is used to inspect the scope variable on firebug
 
 
 
