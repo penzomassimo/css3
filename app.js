@@ -1,5 +1,5 @@
 
-var myApp = angular.module('myAppModule', ['ngRoute', 'ngAnimate', 'tc.chartjs']);
+var myApp = angular.module('myAppModule', ['ngRoute', 'ngAnimate', 'tc.chartjs', 'uiGmapgoogle-maps']);
 
 myApp.config(['$routeProvider', function($routeProvider){
 
@@ -63,6 +63,11 @@ myApp.config(['$routeProvider', function($routeProvider){
         {
             controller: 'svg_controller',
             templateUrl: 'views/svgview.html'
+        })
+        .when('/maps',
+        {
+            controller: 'maps_controller',
+            templateUrl: 'views/googlemaps.html'
         })
 
 
