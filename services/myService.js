@@ -23,7 +23,7 @@ myApp.service('myService', function($http, $q){
             "about": "Minim aliquip labore adipisicing consectetur dolore et labore excepteur deserunt adipisicing consequat amet id veniam. Consequat cillum dolore excepteur voluptate consectetur ea id aliquip consectetur amet. Officia nostrud occaecat exercitation non aliqua consectetur.\r\n",
             "registered": "2014-10-30T21:35:45 +05:00",
             "latitude": -4.068269,
-            "longitude": 16.081266,
+            "longitude": 16.081263,
             "tags": [
                 "occaecat",
                 "est",
